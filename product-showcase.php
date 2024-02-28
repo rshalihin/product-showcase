@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Method product_showcase_block
+ * Get All Product
  *
  * @param array $attributes array of props [explicite description].
  *
