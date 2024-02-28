@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sphr-it/product-showcase",
+  "version": "0.1.0",
+  "title": "Product Showcase",
+  "category": "text",
+  "icon": "cart",
+  "description": "A block to customize and show your online store products. Sapphire-IT make is easy to show the products you want to show.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "product-showcase",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 2
+    },
+    "layout": {
+      "type": "string",
+      "default": "grid"
+    },
+    "filter": {
+      "type": "string",
+      "default": "latest"
+    },
+    "limit": {
+      "type": "number",
+      "default": 20
+    },
+    "order": {
+      "type": "string",
+      "default": "descending"
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "title"
+    },
+    "postsPerPage": {
+      "type": "number",
+      "default": "12"
+    },
+    "pagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "categorys": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

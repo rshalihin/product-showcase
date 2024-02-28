@@ -1,0 +1,34 @@
+{
+	"name": "product-showcase",
+	"version": "0.1.0",
+	"description": "A block to customize and show your online store products. Sapphire-IT make is easy to show the products you want to show.",
+	"author": "Sapphire IT",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"stylelint": {
+		"extends": [
+			"@wordpress/stylelint-config/scss"
+		]
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^17.8.0",
+		"@wordpress/prettier-config": "^3.8.0",
+		"@wordpress/scripts": "^27.2.0",
+		"@wordpress/stylelint-config": "^21.34.0",
+		"eslint-config-prettier": "^9.1.0"
+	},
+	"dependencies": {
+		"@wordpress/data": "^9.21.0",
+		"@wordpress/element": "^5.28.0"
+	}
+}
