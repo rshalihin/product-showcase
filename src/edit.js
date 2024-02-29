@@ -91,8 +91,7 @@ export default function Edit({ attributes, setAttributes }) {
 														: __("No Title", "product-showcase")
 													}
 												</h4>
-												<p className="product-price"> Price: </p>
-												<a className='button product_type_variable add_to_cart_button' href={product.link}>Product details</a>
+												<a className='button product_type_variable add_to_cart_button' target="_blank" rel="noreferrer" href={product.link}>Add to Cart</a>
 
 											</div>
 										</div>
