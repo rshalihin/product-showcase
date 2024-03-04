@@ -76,7 +76,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<section className="wpcp-product-slider-wrapper">
 					<div className="wpcp-product-slider">
 						<div className={`swiper-wrapper flex-display has-${columns}-columns`}>
-							{products && products.map((product) => {
+							{products ? products.map((product) => {
 								const featuerImage = product._embedded && product._embedded['wp:featuredmedia'] && product._embedded['wp:featuredmedia'].length > 0 && product._embedded['wp:featuredmedia'][0];
 								return (
 									<div className="swiper-slide" key={product.id}>
@@ -91,13 +91,14 @@ export default function Edit({ attributes, setAttributes }) {
 														: __("No Title", "product-showcase")
 													}
 												</h4>
+												<p>Price will show frontend pefectly.</p>
 												<a className='button product_type_variable add_to_cart_button' target="_blank" rel="noreferrer" href={product.link}>Add to Cart</a>
 
 											</div>
 										</div>
 									</div>
 								);
-							})}
+							}) : <p className='sr-p-20'>Please Reselect Orderby option of Product Showcase Block to show perfectly.</p>}
 						</div>
 					</div>
 				</section>
