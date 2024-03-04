@@ -4,7 +4,7 @@
  * Description:       A block to customize and show your online store products. Sapphire-IT make is
  * easy to show the products you want to show.
  * Requires at least: 6.1
- * Requires PHP:      7.0
+ * Requires PHP:      7.3
  * Version:           0.1.0
  * Author:            Sapphire IT
  * License:           GPL-2.0-or-later
